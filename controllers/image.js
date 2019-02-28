@@ -13,11 +13,9 @@ const handleApiCall = (req, res) => {
     .catch(err => res.status(400).json(err))
 }
 
-const dbUsers = 'users';
-
 const handleImage = (db) => (req, res) => {
     const { id } = req.body;
-    db(dbUsers).where('id', '=', id)
+    db('users').where('id', '=', id)
         .increment('entries', 1)
         .returning('entries')
         .then(entries => {
