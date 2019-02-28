@@ -1,5 +1,5 @@
-const dbUsers = 'Back-end.users';
-const dbLogin = 'Back-end.login';
+const dbUsers = 'users';
+const dbLogin = 'login';
 
 const handleSignin = (db, bcrypt) => (req, res) => {
     const { email, password } = req.body;

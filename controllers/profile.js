@@ -1,5 +1,5 @@
-const dbUsers = 'Back-end.users';
-const dbLogin = 'Back-end.login';
+const dbUsers = 'users';
+const dbLogin = 'login';
 
 const handleProfileGet = (db) => (req, res) => {
     const { id } = req.params;

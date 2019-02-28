@@ -13,8 +13,8 @@ const handleApiCall = (req, res) => {
     .catch(err => res.status(400).json('unable to work with API'))
 }
 
-const dbUsers = 'Back-end.users';
-const dbLogin = 'Back-end.login';
+const dbUsers = 'users';
+const dbLogin = 'login';
 
 const handleImage = (db) => (req, res) => {
     const { id } = req.body;
